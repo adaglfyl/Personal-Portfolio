@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="documentationstyles.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <header id="main-title">
+        <h2>JavaScript
+            <br>Documentation
+        </h2>
+    </header>
+    <div class="main-page">
+        <nav id="navbar">
+            <header> Index </header>
+            <a class="nav-link" href="#intro">Intro</a>
+            <a class="nav-link" href="#basic_programming_concepts">Basic Programming Concepts</a>
+            <a class="nav-link" href="#variables">Variables</a>
+            <a class="nav-link" href="#conditional_statements">Conditional Statements</a>
+            <a class="nav-link" href="#functions">Functions</a>
+            <a class="nav-link" href="#objects">Objects</a>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="intro">
+                <header>Intro</header>
+                <p>JavaScript is a high-level programming language that is dynamically typed. High level languages are
+                    generally more intuitive to write, as they are not as closely aligned with computer architecture as
+                    low-level languages. Dynamically typed language simplify this process further, as data types of
+                    variables are checked during runtime instead of when compiling, removing the need to delcare
+                    variable types when writing code.</p>
+                <p>JavaScript is commonly used for websites and web applications to help with more complex and
+                    interactive elements, beyond the static HTML code. </p>
+                <div class="code-block">
+                    <code>console.log(Hello World!);</code>
+                </div>
+            </section>
+            <section class="main-section" id="basic_programming_concepts">
+                <header>Basic Programming Concepts</header>
+                <p>This documentation assumes that you are familiar with some basic programming concepts, including
+                    variables, conditional statements, data types, functions, and object literals. </p>
+                <p>Variables are a way of storing data to be referenced and manipulated in computer programming and web
+                    development. Storing variables means that we can later access or change this data through various
+                    means. Each variable will have a data type such as:
+                <ul>
+                    <li>integer - <code>9</code></li>
+                    <li>string - <code>'example'</code></li>
+                    <li>undefined</li>
+                    <li>boolean - <code>true / false</code></li>
+                    <li>nothing - <code>null</code></li>
+                    </p>
+            </section>
+            <section class="main-section" id="variables">
+                <header>Variables</header>
+                <p>Variables act as containers for values of various data types and are named by an 'identifier'. These
+                    identifiers must follow set rules:
+                <ul>
+                    <li>Can contain numbers and alphabetic characters.</li>
+                    <li>Cannot be the same as keywords.</li>
+                    <li>Cannot contain special characters except for $ and _.</li>
+                    <li>First character cannot be a number.</li>
+                </ul>
+
+                They can be declared in a number of ways in JavaScript ever since the introduction of new declaration
+                syntax in ES6. The keywords used to declare variables in JS are var, let, & const. A variable must be
+                declared before it is used, even if it is undefined.</p>
+                <p>The var keyword was the original syntax to declare variables prior to ES6. The scope of a variable
+                    declared with var is either the global scope or the function scope if declared within a function.
+                </p>
+                <div class="code-block">
+                    <code>var name = 'Ada';
+          <br>console.log('My name is' + name + '.');
+          </code>
+                </div>
+                <p>This will output the following to the console:</p>
+                <div class="code-block">
+                    <code>My name is Ada.</code>
+                    </p>
+                </div>
+
+                <p>The let keyword was introduced in ES6 and declares a variable within the block scope. Variables
+                    declared with let can be reassigned at any point.
+                </p>
+                <div class="code-block">
+                    <code>let num = 25;
+        <br>num = 30
+        <br>console.log(num);
+        </code>
+                </div>
+                <p>This will output the following to the console:</p>
+                <div class="code-block">
+                    <code>30</code>
+                </div>
+                </p>
+                <p>The const keyword was also introduced in ES6 and also declares a variable within the block scope. The
+                    difference is that these variables cannot be reassigned. They are however still mutable.
+                <p>
+                <div class="code-block">
+                    <code>const pet = 'cat';
+        <br>pet = 'dog';
+        <br>console.log(pet);
+          </code>
+                </div>
+                <p>This will output an error to the console:</p>
+                <div class="code-block">
+                    <code>Cannot assign to "pet" because it is a constant</code>
+                </div>
+            </section>
+            <section class="main-section" id="conditional_statements">
+                <header>Conditional Statements</header>
+                <p>Conditional statements within JavaScript allow code to run based on set conditions. This is useful
+                    for allowing certain blocks of code to run depending on variable values. Some common conditional
+                    statements include if, else, and else if.</p>
+                <p>Example of an if statement:</p>
+                <div class="code-block">
+                    <code>if (7>3) {
+          <br>var sentence = "That is correct";
+          <br>}
+          <br>console.log(sentence);</code>
+                </div>
+                <p>Output</p>
+                <div class="code-block">
+                    <code>"That is correct"</code>
+                </div>
+                <p>Example of an else statement:</p>
+                <div class="code-block">
+                    <code> if (3>7) {
+          <br>let size = "large enough";
+          <br>} else {
+          <br>let size = "too small";
+          <br>}
+          <br>console.log(size);
+        </code>
+                </div>
+                <p>Output</p>
+                <div class="code-block">
+                    <code>"too small"</code>
+                </div>
+                <p>Example of an else if statement:</p>
+                <div class="code-block">
+                    <code> if (false) {
+          <br> let line = "if line"
+          <br>} else if (true) {
+          <br> let line = "else if line"
+          <br>} else {
+          <br> let line = "else line"
+          <br>}
+          <br>console.log(line);
+        </code>
+                </div>
+                <p>Output</p>
+                <div class="code-block">
+                    <code>else if line</code>
+                    <div class="code-block">
+            </section>
+            <section class="main-section" id="functions">
+                <header>Functions</header>
+                <p>Functions are reusable blocks of code that perform a task, being given an input and returning an
+                    output. Functions must first be defined before being called.
+                    <br>
+                    <br> In JavaScript, a function declaration is peformed by the word 'function', followed by:
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly braces, { /* … */ }.</li>
+                </ul>
+                Functions can also be called without being named by simply missing out the name of the function, this is
+                known as an <b>anonymous function</b>, and these cannot be reused.
+                </p>
+                <p>Example of a function declaration:</p>
+                <div class="code-block">
+                    <code> function squareNumber(number){
+          <br>   return number * number
+          <br> };
+        </code>
+                </div>
+                <p>Once declared, a function may be called by typing the name of the function, followed by the
+                    parameters enclosed in parentheses and separated by commas. </p>
+                <p>Example of a function being called</p>
+                <div class="code-block">
+                    <code>let myNumber = squareNumber(3);
+          <br> console.log(myNumber);
+        </code>
+                </div>
+                <p>Output</p>
+                <div class="code-block">
+                    <code>9</code>
+                </div>
+            </section>
+            <section class="main-section" id="objects">
+                <header>Objects</header>
+                <p>Object are a common data structure within JavaScript that contain key-value pairs of data. The data
+                    itself is the <i>value</i> while the <i>keys</i> are used to access these values. Keys can be
+                    strings, numbers, or symbols. Values can be any data type, including objects.
+                    <br> Objects can be declared by using curly braces, with the key-value pairs either side of a colon
+                    and separated by a comma. This is known as an <b>object literal</b>.
+                </p>
+                <p>Example of an object literal:</p>
+                <div class="code-block">
+                    <code>
+const me = {
+  <br>
+  name: 'Ada',
+  <br>
+  age: 28,
+  <br>
+  gender: 'female'
+  <br>
+};
+        </code>
+                </div>
+                <p>To access the values stored in an object, we can use either <b>dot notation</b> or <b>bracket
+                        notation</b>, as follows:</p>
+                <div class="code-block">
+                    <code>
+const name = me.name; // Ada
+  <br>
+const age = me['age']; // 28
+        </code>
+                </div>
+                <p>To add and delete key-value pairs from an object, we can use dot notation and the <i>delete</i>
+                    keyword.</p>
+                <div class="code-block">
+                    <code>
+me.country = 'United Kingdom'; <i>//  dot notation</i>
+  <br>
+delete me.age; <i>// delete keyword to delete key-value pair</i>
+        </code>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        const sections = document.querySelectorAll('section');
+
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNavLink() {
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const id = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-link[href="#${id}"]`);
+
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    navLink.classList.add('active');
+                } else {
+                    navLink.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavLink);
+    </script>
+
+</body>
+
+</html>

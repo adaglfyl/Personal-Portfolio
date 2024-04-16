@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: verdana;
+    font-size: 14;
+    color: #4d4d6b;
+    }
+  .main-page {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  header {
+    font-family: Rockwell;
+    font-size: 18;
+    font-weight: bold;
+    color: black;
+  }
+  
+  #navbar {
+    display: flex;
+    flex-flow: column wrap;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    width: 25vw;
+    min-width: 200px;
+    max-width: 300px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 1.2em;
+  }
+  
+  #main-title {
+    width: 100%;
+    background-color: #e1e3fa;
+    position: sticky;
+    text-align: center;
+    padding: 0.1rem 1em 0.1rem 1em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+  }
+  .nav-link {
+    color: #535466;
+    background-color: #dcdde6;
+    border: 1.5px solid black;
+    margin: 1px;
+    border-radius: 5px;
+    padding: 0.25em;
+    font-family: Rockwell;
+    text-decoration: none;
+    transition: background-color 0.3s, font-weight 0.3s;
+  }
+  
+  #navbar > .nav-link:hover {
+    color: black;
+    background-color: #acaec2;
+    font-weight: bold;
+  }
+  
+  
+  
+  #navbar header {
+    margin-bottom: 10px;
+  }
+  
+  #main-doc {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 80%;
+  }
+  .main-section {
+    margin-bottom: 1rem;
+  }
+  .code-block {
+    background-color: #f3ebff;
+    padding: 1em;
+    border-radius: 10px;
+    line-height: 1.5rem;
+  }
+  
+  @media screen and (max-width: 705px) {
+    .main-page {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      width: 100%;
+    }
+    #main-doc {
+      width: 90%;
+      align-items: center;
+      margin: auto; 
+    }
+    #main-title {
+      text-align: center;
+      font-size: 14px;
+    }
+    #navbar {
+      width: 100%;
+      max-width: none;
+      text-align: center;
+      align-items: center;
+      position: static;
+      }
+    .nav-link {
+    width: 80%;
+    margin: 1px;
+    max-width: 700px;
+    }
+    .code-block {
+      width: 100%;
+      align-items: center;
+      max-width: 100%;
+    }
+  }
+  .active {
+    color: white;
+    background-color: #626273;
+    font-weight: bold;
+   
+  }

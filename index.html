@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ada Fae Gilfoyle - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="javascript:setTimeout(()=>{window.location = '#welcome-section' },750);" onclick="hideArt()">About</a>
+        <a href="javascript:setTimeout(()=>{window.location = '#projects' },750);" onclick="hideArt()">Projects</a>
+        <a href="javascript:setTimeout(()=>{window.location = '#contact' },750);" onclick="hideArt()"
+            onclick="hideArt()">Contact</a>
+    </nav>
+    <div class="transition slide-in is-active"></div>
+    <div id="art-page">
+        <div id="art-page-wrapper"></div>
+        <div id="art-design">
+            <a id="portfolio-return" onclick="hideArt()"
+                href="javascript:setTimeout(()=>{window.location = '#projects' },750);">back</a>
+            <img class="gallery-image" src="https://iili.io/Jvms94V.png">
+            <img class="gallery-image" src="https://iili.io/JkOKgf9.png">
+            <img class="gallery-image" style="object-fit: contain;" src="https://iili.io/Jke6lRa.png">
+            <img class="gallery-image" src="https://iili.io/JkOKSi7.png">
+            <img class="gallery-image" src="https://iili.io/JvmiyEQ.gif">
+            <img class="gallery-image" src="https://iili.io/JkOKON4.gif">
+            <img class="gallery-image" src="https://iili.io/JvtWea9.gif">
+            <img class="gallery-image" src="https://iili.io/JvDS36g.gif">
+            <img class="gallery-image" src="https://iili.io/JvbHmjS.gif">
+        </div>
+    </div>
+    <section id="welcome-section">
+        <div id="intro-div">
+            <h1 class="pixel-corners">
+                Hello, I'm Ada.
+            </h1><img src="https://iili.io/JNVZGHv.gif" alt="icon gif">
+        </div>
+        <p>I'm a Front-End Developer, UI/UX Designer, & Digital Artist.</p>
+    </section>
+    <section id="projects">
+        <img class="projects-gif" src="https://iili.io/JNiRDNt.gif">
+        <h2>Here is some of my work: </h2>
+        <div id="projects-container">
+            <div class="project-tile hidden">
+                <div class="project-image">
+                    <a href="https://adaglfyl.github.io/WHATNAH/index.html" target="_blank">
+                        <div class="bar-container">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <img src="https://iili.io/JNGwdYv.png" alt="website icon">
+                    </a>
+                </div>
+                <br>
+                <a class="project-link" href="https://adaglfyl.github.io/WHATNAH/index.html" target="_blank">WHAT?NAH Band Website</a>
+                <ul class="tech-icons">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="project-tile hidden">
+                <div class="project-image">
+                    <a href="./jsdocumentation.html" target="_blank">
+                        <div class="bar-container">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <img src="https://iili.io/J8oxUHQ.png" alt="website icon">
+                    </a>
+                </div>
+                <br>
+                <a class="project-link" href="./jsdocumentation.html" target="_blank">JavaScript Documentation</a>
+                <ul class="tech-icons">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="project-tile hidden">
+                <div class="project-image">
+                    <a href="https://www.figma.com/file/0luSRJBSh04wO4PDJU1K89/BandChat-App-Design?type=design&node-id=0%3A1&mode=design&t=61N9wSwkrKlkBzjV-1" target="_blank">
+                        <div class="bar-container">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <img src="https://iili.io/Jk1Qjhg.png" alt="bandchat icon">
+                    </a>
+                </div>
+                <br>
+                <a class="project-link"
+                    href="https://www.figma.com/file/0luSRJBSh04wO4PDJU1K89/BandChat-App-Design?type=design&node-id=0%3A1&mode=design&t=61N9wSwkrKlkBzjV-1" target="_blank">Bandchat App Idea</a>
+                <ul class="tech-icons">
+                    <li>ProCreate</li>
+                    <li>Figma</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+            <div class="project-tile hidden">
+                <div class="project-image">
+                    <a onclick="showArt()" href="#art-page">
+                        <div class="bar-container">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <img src="https://iili.io/JkOKSi7.png" alt="art design
+           icon">
+                    </a>
+                </div>
+                <a onclick="showArt()" class="project-link" href="#art-page">Digital Art & Design</a>
+                <ul class="tech-icons">
+                    <li>ProCreate</li>
+                    <li>Aseprite</li>
+                    <li>Adobe CC</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Get In Touch.</h2>
+        <ul id="contact-div" class="pixel-corners">
+            <a id="profile-link" class="contact-link" href="https://github.com/adaglfyl" target="_blank">
+                <li><img src="https://iili.io/J8nXJJp.png" class="contact-img">GitHub</li>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/ada-gilfoyle-342608213/" target="_blank">
+                <li><img src="https://iili.io/J8nXd5N.png" class="contact-img">LinkedIn</li>
+            </a>
+            <a class="contact-link" href="mailto&#58;ada&#37;67i&#108;foy%6&#67;%65%40g&#37;6&#68;&#37;61i%6C&#46;c&#111;&#37;6D'>ada&#103;&#105;lfoyl&#101;&#64;gmai&#108;&#46;&#99;&#111;m" target="_blank">
+                <li><img src="https://iili.io/J8nX9gR.png" class="contact-img">Email</li>
+            </a>
+        </ul>
+    </section>
+</body>
+
+</html>

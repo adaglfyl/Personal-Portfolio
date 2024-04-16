@@ -517,6 +517,7 @@ h2 {
     height: 85vh;
     width: 85vw;
     object-fit: contain;
+    margin: auto;
 }
 
 #close {

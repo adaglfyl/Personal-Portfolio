@@ -12,10 +12,9 @@
 
 <body>
     <nav id="navbar">
-        <a href="javascript:setTimeout(()=>{window.location = '#welcome-section' },750);" onclick="hideArt()">About</a>
-        <a href="javascript:setTimeout(()=>{window.location = '#projects' },750);" onclick="hideArt()">Projects</a>
-        <a href="javascript:setTimeout(()=>{window.location = '#contact' },750);" onclick="hideArt()"
-            onclick="hideArt()">Contact</a>
+        <a href="javascript:void(0)" onclick="setTimeout(()=>{document.getElementById('welcome-section').scrollIntoView()},750);hideArt()">About</a>
+        <a href="javascript:void(0)" onclick="setTimeout(()=>{document.getElementById('projects').scrollIntoView()},750);hideArt()">Projects</a>
+        <a href="javascript:void(0)" onclick="setTimeout(()=>{document.getElementById('contact').scrollIntoView()},750);hideArt()">Contact</a>
     </nav>
     <div class="transition slide-in is-active"></div>
     <div id="art-page">
